@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/notebook-removebg-preview.png" type="image/x-icon">
+    <title>Note Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<body>
+
+    <h1>NOTE BOOK</h1>
+
+    <main>
+        <div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12 col-lg-12 text-center mt-4 ">
+
+                        <input class="myInput animate__animated animate__backInDown" placeholder="Enter Tittle...!"
+                            type="text" id="titleInp"><br>
+                        <input id="textInp" class="myInput animate__animated animate__backInDown"
+                            placeholder="Enter Your Text.....!" type="text">
+
+                    </div>
+                    <div class="col-sm-12 miIcon text-center mb-5">
+                        <i onclick="addItem()" class="fas fa-plus-square animate__animated animate__backInLeft"></i>
+                        <i onclick="dltAll()" class="fas fa-trash animate__animated animate__backInRight"></i>
+                    </div>
+
+
+
+                    <div data-aos="fade-up" class="col-sm-12  mt-2 mb-5 mbox" id="mainBox">
+                        <!-- <div class=" myBox">
+            
+                            <section class="list">
+                                <h4>title</h4>
+                                <p>sadasdsad</p>
+                                <h6 class="">
+                                    <i class="fas fa-minus-circle"></i>
+                                    <i class="fas fa-edit"></i>
+                                </h6>
+                            </section>
+                        </div> -->
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <p class="talha animate__animated animate__bounce animate__bounceInUp">Developer HM Talha</p>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="app.js"></script>
+<script>
+    AOS.init();
+    // console.log(AOS.init());
+</script>
+
+</html>
